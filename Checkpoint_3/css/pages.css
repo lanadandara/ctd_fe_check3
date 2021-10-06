@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #02020a;
+}
+
+/*NAV*/
+.navbar {
+  background-color: #266dd3;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__title {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 20px 0;
+  display: inline-block;
+  left: 0;
+  padding-right: 30px;
+}
+.navba__container {
+  overflow: hidden;
+  display: inline-block;
+  right: 0;
+}
+
+.navbar__list {
+  list-style: none;
+}
+
+.navbar__item {
+  display: inline;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+}
+
+.navbar__link:hover {
+  background-color: #85c7de;
+}
+
+.navbar__link.active {
+  color: #ffbf46;
+}
+
+/*HEADERS PAGINAS*/
+.waitress {
+  background-image: url('https://www.broadwaycollection.com/wp-content/uploads/Waitress-Photo.jpg');
+}
+
+.hamilton {
+  background-image: url('https://sm.ign.com/ign_br/screenshot/default/1-vlubom-yf6ncpplq6jsiyw_x1cg.jpg');
+}
+
+.six {
+  background-image: url('https://imaging.broadway.com/images/widescreen-169/w1920/119936-22.jpeg');
+}
+
+.hadestown {
+  background-image: url('https://deadline.com/wp-content/uploads/2018/11/hadestown.jpg');
+}
+
+.wicked {
+  background-image: url('https://sessaopopular.com.br/wp-content/uploads/2021/05/capa.jpg');
+}
+
+.moulinrouge {
+  background-image: url('https://mk0dagobahypoeojs1b.kinstacdn.com/wp-content/uploads/2020/03/MOULIN_ROUGE_BROADWAY_10_30_19_0103_02.jpg');
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+/*HEADER*/
+
+.header__container {
+  background: rgb(2, 2, 10);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 2, 10, 0.3) 0%,
+    rgba(2, 2, 10, 0.3) 71%,
+    rgba(2, 2, 10, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+/*MAIN*/
+.main {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.main__title {
+  color: #fff;
+  font-weight: bolder;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 80px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.main__text {
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main__container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 80%;
+  margin: 40px auto;
+}
+.main__container iframe,
+.main__container object,
+.main__container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #266dd3;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.text-footer {
+  font-weight: bolder;
+  font-size: 18px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.links-sociais {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.icones-sociais {
+  width: 30px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 600px) {
+  .main__title {
+    font-size: 36px;
+  }
+}
